@@ -1,7 +1,7 @@
 FROM python:3
 
 RUN apt-get update && apt-get install -y git
-RUN git clone https://github.com/guoyww/AnimateDiff.git /app/AnimateDiff
+RUN git clone https://github.com/grantbabb/AnimateDiff.git
 
 
 WORKDIR /app/AnimateDiff
