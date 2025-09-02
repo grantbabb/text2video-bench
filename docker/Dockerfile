@@ -5,7 +5,7 @@ RUN git clone https://github.com/grantbabb/AnimateDiff.git
 
 
 WORKDIR /app/AnimateDiff
-RUN ls
+RUN ls /app/AnimateDiff
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY *.py /app/AnimateDiff
