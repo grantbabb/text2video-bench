@@ -6,7 +6,7 @@ Resources:
   ModelsBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: !Sub '${AWS::StackName}-models'
+      BucketName: !Sub '${'models'}
       PublicAccessBlockConfiguration:
         BlockPublicAcls: true
         BlockPublicPolicy: true
@@ -18,7 +18,7 @@ Resources:
   Text2VideoBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: !Sub '${AWS::StackName}-text2video}'
+      BucketName: !Sub '${text2video}'
       PublicAccessBlockConfiguration:
         BlockPublicAcls: true
         BlockPublicPolicy: true
