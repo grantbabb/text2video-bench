@@ -6,7 +6,7 @@ Resources:
   ModelsBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: !Sub '${'models'}
+      BucketName: !Sub '${models}'
       PublicAccessBlockConfiguration:
         BlockPublicAcls: true
         BlockPublicPolicy: true
